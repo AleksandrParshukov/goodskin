@@ -1,0 +1,110 @@
+:root {
+  --color-white-half: rgb(255 255 255 / 0.54);
+  --color-white: #ffffff;
+  --color-black: #010101;
+  --color-black-half: rgb(0 0 0 / 0.54);
+  --color-primary: #239665;
+  --color-primary-hover: #1e6848;
+  --color-warning: #ffbb00;
+  --color-danger: #f0272b;
+  --color-substrate: #f7f7f7;
+  --star-svg: url('data:image/svg+xml;utf8,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8291 1.47913C11.3124 0.173404 13.1602 0.173402 13.6436 1.47913L15.7695 7.2262C16.0227 7.9105 16.5628 8.45052 17.2471 8.70374L22.9941 10.8297C24.2999 11.313 24.2999 13.1609 22.9941 13.6442L17.2471 15.7701C16.5628 16.0234 16.0227 16.5634 15.7695 17.2477L13.6436 22.9948C13.1603 24.3005 11.3124 24.3005 10.8291 22.9948L8.70312 17.2477C8.44991 16.5634 7.90988 16.0234 7.22559 15.7701L1.47852 13.6442C0.172793 13.1609 0.172792 11.313 1.47852 10.8297L7.22559 8.70374C7.90988 8.45052 8.44991 7.91049 8.70312 7.2262L10.8291 1.47913Z" stroke="%23010101"/></svg>');
+  --star-svg-fill: url('data:image/svg+xml;utf8,<svg width="25" height="25" viewBox="0 0 25 25" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M10.8291 1.47913C11.3124 0.173404 13.1602 0.173402 13.6436 1.47913L15.7695 7.2262C16.0227 7.9105 16.5628 8.45052 17.2471 8.70374L22.9941 10.8297C24.2999 11.313 24.2999 13.1609 22.9941 13.6442L17.2471 15.7701C16.5628 16.0234 16.0227 16.5634 15.7695 17.2477L13.6436 22.9948C13.1603 24.3005 11.3124 24.3005 10.8291 22.9948L8.70312 17.2477C8.44991 16.5634 7.90988 16.0234 7.22559 15.7701L1.47852 13.6442C0.172793 13.1609 0.172792 11.313 1.47852 10.8297L7.22559 8.70374C7.90988 8.45052 8.44991 7.91049 8.70312 7.2262L10.8291 1.47913Z" stroke="%23010101"/></svg>');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-black);
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a,
+input {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+a {
+  color: var(--color-black);
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+label[for]:not([for='']) {
+  cursor: pointer;
+}
+
+.desc {
+  text-wrap: pretty;
+}
+
+.desc ul,
+.desc ol,
+.desc dl {
+  list-style: revert;
+  padding: revert;
+  margin: revert;
+}
+
+.desc p + p {
+  margin-top: 1em;
+}

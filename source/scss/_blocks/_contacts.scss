@@ -1,0 +1,150 @@
+.contacts {
+  .wrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(3, min-content);
+    gap: 10px 16px;
+
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3) {
+      margin-bottom: 6px;
+      grid-column: span 2;
+      grid-row: 1 / 2;
+    }
+
+    li:nth-child(4) {
+      grid-column: span 3;
+      grid-row: 2 / 4;
+    }
+
+    li:nth-child(5) {
+      grid-column: span 3;
+      grid-row: 2 / 3;
+    }
+
+    li:nth-child(6) {
+      grid-column: span 3;
+      grid-row: 3 / 4;
+    }
+  }
+
+  &__item {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #1d191a;
+    height: 100%;
+    padding: 24px;
+    background-color: var(--color-substrate);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &.social {
+      padding: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 12px;
+    }
+  }
+
+  &__caption {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__map {
+    width: 48.8%;
+    height: auto;
+    padding: 16px;
+    background-color: var(--color-substrate);
+    border-radius: 24px;
+
+    > div {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+}
+
+a.contacts__item:hover,
+a.contacts__item:focus {
+  border-color: var(--color-balck);
+}
+
+@media (max-width: $lg) {
+  .contacts {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+
+      li {
+        margin-bottom: 0 !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .contacts {
+    .wrapper {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__map {
+      width: 100%;
+      height: 360px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .contacts {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+
+      li:nth-child(-n + 4) {
+        grid-column: span 2 !important;
+      }
+    }
+
+    &__item {
+      font-size: 18px;
+      padding: 16px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+
+      &.social {
+        padding: 16px;
+      }
+
+      p:last-child {
+        text-align: right;
+      }
+    }
+
+    &__map {
+      padding: 12px;
+    }
+  }
+}

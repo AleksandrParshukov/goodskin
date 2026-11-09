@@ -1,0 +1,182 @@
+@@include('./_header.html')
+
+<section class="top-section tests-zoom__top">
+  <div class="wrapper">
+    <div class="top-section__container">
+      <div class="top-section__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li><a href="tests.html">Мини-тесты</a></li>
+          <li>
+            <p>Ваш тип кожи</p>
+          </li>
+        </ol>
+        <h1 class="h1">Ваш тип кожи</h1>
+        <div class="tests-zoom__top-desc desc">
+          Короткий тест, который поможет определить базовый тип кожи
+        </div>
+      </div>
+      <picture class="top-section__image">
+        <source media="(min-width: 768px)" srcset="./img/blog-zoom-top.png">
+        <img src="./img/blog-zoom-top-sm.png" alt="">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="tests-zoom section">
+  <div class="wrapper">
+    <div class="information__block tests-zoom__info">
+      <img class="information__icon" src="./img/info-icon.svg" width="48" height="48" alt="">
+      <div class="information__content">
+        <p class="information__title">Инструкция:</p>
+        <div class="information__text desc">
+          <p>Выберите один ответ, который лучше всего описывает ваше состояние через 1–2 часа после умывания (без нанесения крема).</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="tests-zoom__test js_test">
+      <div class="tests-zoom__step active js_test_step" data-step="1">
+        <p class="tests-zoom__question">Как выглядит кожа в Т-зоне (лоб, нос, подбородок)?</p>
+        <div class="tests-zoom__answers">
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-1" id="tests-zoom-1-1" checked>
+            <label for="tests-zoom-1-1">А) Блестит как будто маслянистая пленка.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-1" id="tests-zoom-1-2">
+            <label for="tests-zoom-1-2">Б) Матовая, шелушится или стянутая.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-1" id="tests-zoom-1-3">
+            <label for="tests-zoom-1-3">В) Блестит, но не сильно (умеренная жирность).</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-1" id="tests-zoom-1-4">
+            <label for="tests-zoom-1-4">Г) Матовая, гладкая, без жирного блеска.</label>
+          </div>
+        </div>
+      </div>
+      <div class="tests-zoom__step js_test_step" data-step="2">
+        <p class="tests-zoom__question">Как выглядят поры на щеках и носу?</p>
+        <div class="tests-zoom__answers">
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-2" id="tests-zoom-2-1" checked>
+            <label for="tests-zoom-2-1">А) Поры широкие, заметные (особенно на носу).</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-2" id="tests-zoom-2-2">
+            <label for="tests-zoom-2-2">Б) Поры почти не видны.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-2" id="tests-zoom-2-3">
+            <label for="tests-zoom-2-3">В) Поры широкие только на носу и лбу, на щеках их почти нет.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-2" id="tests-zoom-2-4">
+            <label for="tests-zoom-2-4">Г) Поры мелкие и малозаметные.</label>
+          </div>
+        </div>
+      </div>
+      <div class="tests-zoom__step js_test_step" data-step="3">
+        <p class="tests-zoom__question">Как кожа реагирует на умывание с мылом/гелем (без крема)?</p>
+        <div class="tests-zoom__answers">
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-3" id="tests-zoom-3-1" checked>
+            <label for="tests-zoom-3-1">А) Чувствуется стянутость, но быстро возвращается жирный блеск.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-3" id="tests-zoom-3-2">
+            <label for="tests-zoom-3-2">Б) Ощущение стянутости, зуда, сухости.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-3" id="tests-zoom-3-3">
+            <label for="tests-zoom-3-3">В) Стянуты только щеки, нос и лоб быстро становятся жирными.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-3" id="tests-zoom-3-4">
+            <label for="tests-zoom-3-4">Г) Нет дискомфорта, кожа мягкая.</label>
+          </div>
+        </div>
+      </div>
+      <div class="tests-zoom__step js_test_step" data-step="4">
+        <p class="tests-zoom__question">Как часто появляются высыпания (прыщи, черные точки)?</p>
+        <div class="tests-zoom__answers">
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-4" id="tests-zoom-4-1" checked>
+            <label for="tests-zoom-4-1">А) Часто (черные точки и воспаления) по всему лицу.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-4" id="tests-zoom-4-2">
+            <label for="tests-zoom-4-2">Б) Очень редко, разве что при стрессе (кожа склонна к раздражению).</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-4" id="tests-zoom-4-3">
+            <label for="tests-zoom-4-3">В) Регулярно в Т-зоне (лоб/нос), щеки чистые.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-4" id="tests-zoom-4-4">
+            <label for="tests-zoom-4-4">Г) Редко, единичные прыщики</label>
+          </div>
+        </div>
+      </div>
+      <div class="tests-zoom__step js_test_step" data-step="5">
+        <p class="tests-zoom__question">В течение дня ваш макияж (тональный крем/пудра):</p>
+        <div class="tests-zoom__answers">
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-5" id="tests-zoom-5-1" checked>
+            <label for="tests-zoom-5-1">А) «Плывет» и блестит уже через 2–3 часа.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-5" id="tests-zoom-5-2">
+            <label for="tests-zoom-5-2">Б) Ложится плохо, подчеркивает шелушения, держится долго.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-5" id="tests-zoom-5-3">
+            <label for="tests-zoom-5-3">В) Сползает с носа и лба, но на щеках держится отлично.</label>
+          </div>
+          <div class="tests-zoom__radio">
+            <input type="radio" name="tests-zoom-5" id="tests-zoom-5-4">
+            <label for="tests-zoom-5-4">Г) Держится ровно в течение всего дня, не блестит.</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tests-zoom__bottom">
+        <a href="#" class="tests-zoom__btn-prev btn btn-text js_btn_prev">
+          <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" transform="matrix(-1 0 0 1 44 0)" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+            <path d="M26.4688 13.0625L17.5312 22L26.4688 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+
+          <span>Назад</span>
+        </a>
+
+        <p class="tests-zoom__step-num">
+          <span class="js_current_step">01</span>
+          <span>/</span>
+          <span class="total">05</span>
+        </p>
+
+        <div class="tests-zoom__btn-next">
+          @@include('./_btn.html', {text: "К следующему вопросу", link: "#", class: "btn btn-text js_btn_next"})
+          @@include('./_btn.html', {text: "Получить ответ", link: "#", class: "tests-zoom__submit btn js_btn_submit"})
+        </div>
+      </div>
+    </form>
+
+    <div class="information__block tests-zoom__info tests-zoom__result js_test_result">
+      <div class="information__content">
+        <p class="information__title">Жирная кожа</p>
+        <div class="information__text desc">
+          <p>У вас активная работа сальных желез, расширенные поры и склонность к блеску/акне.</p>
+
+          <p>Плюс: кожа дольше стареет (морщины появляются позже).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('./_footer.html')

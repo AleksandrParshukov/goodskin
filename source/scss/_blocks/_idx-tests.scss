@@ -1,0 +1,17 @@
+.idx-tests {
+  padding-block: 70px;
+
+  .h1 {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: $sm) {
+  .idx-tests {
+    padding-block: 30px 70px;
+
+    .h1 {
+      margin-bottom: 30px;
+    }
+  }
+}

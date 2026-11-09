@@ -1,0 +1,262 @@
+.diagnostics {
+  &__compound {
+    padding-block: 70px;
+
+    .h1 {
+      text-align: right;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__compound-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    li {
+      font-weight: 500;
+      font-size: 20px;
+      padding: 32px;
+      background-color: var(--color-substrate);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: auto 100%;
+      border-radius: 24px;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex: 1 1 30%;
+      }
+
+      &:nth-child(3) {
+        background-image: url('../img/diagnostics-list-1.png');
+      }
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        flex: 1 1 40%;
+      }
+
+      &:nth-child(4) {
+        background-image: url('../img/diagnostics-list-2.png');
+      }
+
+      &:nth-child(6) {
+        flex: 1 1 38%;
+      }
+
+      &:nth-child(7) {
+        flex: 1 1 60%;
+        background-image: url('../img/diagnostics-list-3.png');
+      }
+    }
+  }
+
+  &__algorithm {
+    padding-block: 70px;
+
+    .wrapper {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr min(448px, 33%);
+      grid-template-areas: 'title link' 'list list';
+      gap: 80px 60px;
+
+      .h1 {
+        grid-area: title;
+      }
+
+      .btn {
+        grid-area: link;
+        justify-self: end;
+      }
+    }
+  }
+
+  &__algorithm-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    grid-area: list;
+
+    li {
+      font-weight: 500;
+      font-size: 20px;
+      color: rgb(1 1 1 / 0.9);
+      padding: 32px;
+      background-color: var(--color-substrate);
+      border-radius: 24px;
+      flex: 1 1;
+
+      &:nth-child(1) {
+        flex-basis: 24%;
+      }
+
+      &:nth-child(2) {
+        flex-basis: 74%;
+      }
+
+      &:nth-child(3) {
+        flex-basis: 56%;
+      }
+
+      &:nth-child(4) {
+        flex-basis: 40%;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        color: var(--color-white);
+        background-color: var(--color-black);
+      }
+    }
+  }
+
+  &__num {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  &__delivery {
+    padding-block: 70px 140px;
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 50%;
+      gap: 32px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 32px;
+        grid-column: 2 / 3;
+        grid-row: 1 / span 2;
+      }
+    }
+  }
+
+  &__delivery-desc {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: $md) {
+  .diagnostics {
+    &__compound-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      li {
+        &:nth-child(3) {
+          background-size: 120px 87px;
+        }
+
+        &:nth-child(4) {
+          background-position: top right;
+          background-size: 162px 110px;
+        }
+
+        &:nth-child(7) {
+          background-size: 159px 156px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .diagnostics {
+    &__compound-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__delivery {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .diagnostics {
+    &__compound {
+      padding-block: 50px;
+
+      .h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__compound-list {
+      gap: 10px;
+
+      li {
+        font-size: 18px;
+        padding: 24px;
+
+        &:nth-child(4) {
+          background-position: right -40px top -40px;
+        }
+
+        &:nth-child(7) {
+          background-position: right -33px bottom -20px;
+        }
+      }
+    }
+
+    &__algorithm {
+      padding-block: 50px;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .btn {
+          order: 3;
+        }
+      }
+    }
+
+    &__algorithm-list {
+      gap: 12px;
+
+      li {
+        font-size: 18px;
+        padding: 24px;
+      }
+    }
+
+    &__num {
+      font-size: 36px;
+    }
+
+    &__delivery {
+      padding-block: 50px 100px;
+
+      .wrapper {
+        img {
+          border-radius: 24px;
+        }
+      }
+    }
+
+    &__delivery-desc {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.not-found {
+  &__block {
+    min-height: 400px;
+    height: calc(100vw * (700 / 1392));
+    max-height: 700px;
+    background: rgba(240, 240, 240, 0.5) url('../img/404.webp') no-repeat center / cover;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-block: -65px 60px;
+  }
+}
+
+@media (max-width: $sm) {
+  .not-found {
+    &__title {
+      font-size: 150px;
+    }
+
+    &__text {
+      font-size: 32px;
+      margin-block: -45px 40px;
+    }
+  }
+}

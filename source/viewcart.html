@@ -1,0 +1,127 @@
+@@include('./_header.html')
+
+<section class="cart__top">
+  <div class="wrapper">
+    <ol class="breadcrumbs">
+      <li><a href="/">Главная</a></li>
+      <li>
+        <p>Корзина</p>
+      </li>
+    </ol>
+    <div class="cart__top-container">
+      <h1 class="h1">Корзина</h1>
+    </div>
+  </div>
+</section>
+
+<section class="cart section js_cart">
+  <div class="wrapper">
+    <ul class="cart__list">
+      <li class="cart__item">
+        <img class="cart__img" src="./img/product-item.png" width="160" height="135" alt="">
+        <div class="cart__info">
+          <p class="cart__name">Triple acid peeling mask</p>
+          <p class="cart__desc desc">
+            Интенсивная пилинг-маска с тремя кислотами 100 мл EKSEPTION (Испания)
+          </p>
+        </div>
+
+        <div class="cart__bottom">
+          <p class="cart__price-block js_price" data-price="3244">
+            <span class="cart__price js_price_value">6 488 ₽</span>
+            <span class="js_unit-price">3 244 ₽ за шт.</span>
+          </p>
+          <div class="cart__qty">
+            <button type="button" class="cart__qty-minus js_qty_minus">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <input type="number" class="cart__qty-input js_qty" min="0" value="1" max="100">
+            <button type="button" class="cart__qty-plus js_qty_plus">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.75 0.75V14.75M0.75 7.75H14.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="cart__item">
+        <img class="cart__img" src="./img/product-item.png" width="160" height="135" alt="">
+        <div class="cart__info">
+          <p class="cart__name">Triple acid peeling mask</p>
+          <p class="cart__desc desc">
+            Интенсивная пилинг-маска с тремя кислотами 100 мл EKSEPTION (Испания)
+          </p>
+        </div>
+
+        <div class="cart__bottom">
+          <p class="cart__price-block js_price" data-price="3244">
+            <span class="cart__price js_price_value">3 244 ₽</span>
+          </p>
+          <div class="cart__qty">
+            <button type="button" class="cart__qty-minus js_qty_minus">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <input type="number" class="cart__qty-input js_qty" min="0" value="1" max="100">
+            <button type="button" class="cart__qty-plus js_qty_plus">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.75 0.75V14.75M0.75 7.75H14.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="cart__item">
+        <img class="cart__img" src="./img/product-item.png" width="160" height="135" alt="">
+        <div class="cart__info">
+          <p class="cart__name">Triple acid peeling mask</p>
+          <p class="cart__desc desc">
+            Интенсивная пилинг-маска с тремя кислотами 100 мл EKSEPTION (Испания)
+          </p>
+        </div>
+
+        <div class="cart__bottom">
+          <p class="cart__price-block js_price" data-price="3244">
+            <span class="cart__price js_price_value">3 244 ₽</span>
+          </p>
+          <div class="cart__qty">
+            <button type="button" class="cart__qty-minus js_qty_minus">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <input type="number" class="cart__qty-input js_qty js_qty" min="0" value="1" max="100">
+            <button type="button" class="cart__qty-plus js_qty_plus">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.75 0.75V14.75M0.75 7.75H14.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="cart__total cart-total">
+      <p class="cart-total__caption">Итого</p>
+
+      <dl class="cart-total__summary">
+        <div>
+          <dt>Товары (3)</dt>
+          <dd>13 498 ₽</dd>
+        </div>
+        <div class="cart-total__total">
+          <dt>Всего</dt>
+          <dd>13 498 ₽</dd>
+        </div>
+      </dl>
+
+      @@include('./_btn.html', {text: "Перейти к доставке", link: "viewcart_delivery.html", class: "btn"})
+      <p class="cart-total__note">Безопасная оплата</p>
+    </div>
+  </div>
+</section>
+
+@@include('./_footer.html')

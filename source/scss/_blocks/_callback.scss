@@ -1,0 +1,77 @@
+.callback {
+  padding-block: 60px;
+  background: var(--color-substrate) url('../img/callback-pattern-bg.svg') no-repeat center / 100%;
+
+  .wrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(1 1 1 / 0.9);
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: $md) {
+  .callback {
+    &__control {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .callback {
+    padding-block: 80px;
+
+    .wrapper {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__content {
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__control {
+      gap: 12px;
+
+      .btn {
+        width: 100%;
+        max-width: 370px;
+      }
+    }
+  }
+}

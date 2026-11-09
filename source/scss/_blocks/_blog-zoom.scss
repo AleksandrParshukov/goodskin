@@ -1,0 +1,137 @@
+.blog-zoom {
+  --margin-top: 40px;
+  &__top .top-section__image::after {
+    content: none;
+  }
+
+  &__long-desc {
+    font-weight: 400;
+    font-size: 18px;
+
+    h2,
+    h3 {
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-block: var(--margin-top) 16px;
+
+      + h3 {
+        margin-top: 0;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-block: var(--margin-top) 12px;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: rgb(1 1 1 / 0.6);
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-block: var(--margin-top) 0;
+
+      li {
+        display: flex;
+        gap: 12px;
+
+        &::before {
+          content: '';
+          width: 24px;
+          height: 24px;
+          background: transparent var(--star-svg) no-repeat center / 20px;
+          flex-shrink: 0;
+        }
+
+        + li {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    ol {
+      padding-left: 35px;
+      margin-block: var(--margin-top) 0;
+
+      li + li {
+        margin-top: 16px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: var(--margin-top);
+    }
+
+    blockquote {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.1;
+      padding: var(--margin-top) 60px;
+      margin: var(--margin-top) 0;
+      border: 1px solid var(--color-black);
+      border-radius: 32px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .blog-zoom {
+    --margin-top: 24px;
+
+    &__long-desc {
+      font-size: 16px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      ul {
+        li {
+          gap: 6px;
+
+          &::before {
+            width: 20px;
+            height: 20px;
+            background-size: 16px;
+          }
+
+          + li {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      ol {
+        padding-left: 26px;
+
+        li + li {
+          margin-top: 8px;
+        }
+      }
+
+      blockquote {
+        font-size: 20px;
+        padding-inline: 24px;
+        border-radius: 24px;
+      }
+    }
+  }
+}

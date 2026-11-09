@@ -1,0 +1,136 @@
+@@include('./_header.html')
+
+<section class="cart__top">
+  <div class="wrapper">
+    <ol class="breadcrumbs">
+      <li><a href="/">Главная</a></li>
+      <li><a href="viewcart.html">Главная</a></li>
+      <li>
+        <p>Доставка</p>
+      </li>
+    </ol>
+    <div class="cart__top-container">
+      <h1 class="h1">Доставка</h1>
+      <a href="viewcart.html" class="btn btn-text">
+        <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="22" transform="matrix(-1 0 0 1 44 0)" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+          <path d="M26.4688 13.0625L17.5312 22L26.4688 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+        </svg>
+
+        <span>Вернуться в корзину</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cart delivery section">
+  <div class="wrapper">
+    <form action="" class="delivery__form">
+      <div class="delivery__block">
+        <p class="cart__caption">Способ получения</p>
+        <div class="delivery__row">
+          <div class="delivery__radio">
+            <input type="radio" name="delivery" id="delivery-1" checked>
+            <label for="delivery-1">
+              <span class="radio-name">Самовывоз</span>
+              <span class="radio-desc">
+                «Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202
+              </span>
+              <span class="radio-note">По предварительной договорённости • Бесплатно</span>
+            </label>
+          </div>
+          <div class="delivery__radio">
+            <input type="radio" name="delivery" id="delivery-2">
+            <label for="delivery-2">
+              <span class="radio-name">Доставка СДЭК</span>
+              <span class="radio-desc">До пункта выдачи или курьером до двери</span>
+              <span class="radio-note">
+                Стоимость и сроки рассчитываются индивидуально • Оплата за счёт покупателя
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="delivery__block">
+        <p class="cart__caption">Контактные данные</p>
+        <div class="delivery__row">
+          <div class="form-group">
+            <label class="contact-form__label" for="name">ФИО *</label>
+            <input class="contact-form__input" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="phone">Телефон *</label>
+            <input class="contact-form__input js_phone_input" type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="email">Email *</label>
+            <input class="contact-form__input" type="email" name="email" id="email" placeholder="example@mail.com">
+          </div>
+        </div>
+        <div class="delivery__row">
+          <div class="form-group">
+            <label class="contact-form__label" for="address">Адрес доставки</label>
+            <textarea class="contact-form__input" name="address" id="address" placeholder="Укажите адрес, если выбрана доставка" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="comment">Комментарий к заказу</label>
+            <textarea class="contact-form__input" name="comment" id="comment" placeholder="Дополнительная информация" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="contact-form__checkbox">
+          <input type="checkbox" name="personal-data" id="personal-data">
+          <label for="personal-data">
+            <span>Согласие на обработку персональных данных</span>
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <div class="cart__total cart-total">
+      <p class="cart__caption">Итого</p>
+
+      <ul class="cart-total__list">
+        <li class="cart-total__item">
+          <img src="./img/product-item.png" width="58" height="58" alt="">
+          <div class="cart-total__info">
+            <p class="cart-total__name">Post-peel glaciar mask</p>
+            <p>2 шт. × 3 244 ₽</p>
+          </div>
+          <p class="cart-total__price">6 488 ₽</p>
+        </li>
+        <li class="cart-total__item">
+          <img src="./img/product-item.png" width="58" height="58" alt="">
+          <div class="cart-total__info">
+            <p class="cart-total__name">Post-peel glaciar mask</p>
+            <p>1 шт. × 3 244 ₽</p>
+          </div>
+          <p class="cart-total__price">3 244 ₽</p>
+        </li>
+        <li class="cart-total__item">
+          <img src="./img/product-item.png" width="58" height="58" alt="">
+          <div class="cart-total__info">
+            <p class="cart-total__name">Post-peel glaciar mask</p>
+            <p>1 шт. × 3 244 ₽</p>
+          </div>
+          <p class="cart-total__price">3 244 ₽</p>
+        </li>
+      </ul>
+
+      <dl class="cart-total__summary">
+        <div>
+          <dt>Товары (3)</dt>
+          <dd>13 498 ₽</dd>
+        </div>
+        <div class="cart-total__total">
+          <dt>Всего</dt>
+          <dd>13 498 ₽</dd>
+        </div>
+      </dl>
+
+      @@include('./_btn.html', {text: "Оформить заказ", link: "viewcart_delivery.html", class: "btn"})
+      <p class="cart-total__note">Безопасная оплата</p>
+    </div>
+  </div>
+</section>
+
+@@include('./_footer.html')

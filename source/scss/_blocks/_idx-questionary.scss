@@ -1,0 +1,46 @@
+.idx-questionary {
+  padding-block: 60px;
+  margin-bottom: 46px;
+  background: var(--color-black) url('../img/idx-questionary-bg.svg') no-repeat center / 100%;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-white);
+  }
+
+  .btn {
+    width: 400px;
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-questionary {
+    padding-block: 80px;
+    margin-bottom: 0;
+    background: var(--color-black) url('../img/idx-questionary-bg.svg') no-repeat center / 100%;
+
+    .wrapper {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}

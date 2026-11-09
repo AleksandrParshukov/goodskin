@@ -1,0 +1,565 @@
+@@include('./_header.html')
+
+<section class="top-section quiz__top">
+  <div class="wrapper">
+    <div class="top-section__container">
+      <div class="top-section__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Анкета</p>
+          </li>
+        </ol>
+        <h1 class="h1">Анкета</h1>
+      </div>
+      <picture class="top-section__image">
+        <source media="(min-width: 768px)" srcset="./img/questionary-top.webp">
+        <img src="./img/questionary-top-sm.webp" alt="">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="quiz section">
+  <div class="wrapper">
+    <form action="" class="quiz__form">
+      <ol class="quiz__list">
+        <li>
+          <label class="quiz__label" for="quiz-1">
+            <span>Сколько Вам полных лет?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-1" id="quiz-1" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-2">
+            <span>
+              Имеются ли у Вас кожные заболевания<br class="from-sm">
+              (псориаз, экзема, дерматит, розацеа, герпес, акне и пр.)?
+            </span>
+            <span class="mandatorystart"><b>*</b></span></label>
+          <input class="quiz__text" type="text" name="quiz-2" id="quiz-2" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-3">
+            <span>
+              Имеются ли у Вас хронические заболевания?<br class="from-sm">
+              Если есть, укажите какие.
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-3" id="quiz-3" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-4">
+            <span>
+              Принимаете ли Вы в данный момент лекарственные препараты<br class="from-sm">
+              (КОК, антибиотики, системные ретиноиды и пр.)?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-4" id="quiz-4" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-5">
+            <span>Принимаете ли Вы на данный момент БАДы?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-5" id="quiz-5" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Беременны ли Вы?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-6-1" name="quiz-6" required>
+            <label for="quiz-6-1">Да</label>
+            <input type="radio" value="0" id="quiz-6-0" name="quiz-6" required>
+            <label for="quiz-6-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Планируете ли Вы беременность?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-7-1" name="quiz-7" required>
+            <label for="quiz-7-1">Да</label>
+            <input type="radio" value="0" id="quiz-7-0" name="quiz-7">
+            <label for="quiz-7-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Кормите ли Вы в данный момент грудью?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-8-1" name="quiz-8" required>
+            <label for="quiz-8-1">Да</label>
+            <input type="radio" value="0" id="quiz-8-0" name="quiz-8">
+            <label for="quiz-8-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-9">
+            <span>
+              Есть ли у Вас аллергия?<br class="from-sm">
+              Если есть, укажите на что и как проявляется.
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-9" id="quiz-9" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Курите ли Вы?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-10-1" name="quiz-10" required>
+            <label for="quiz-10-1">Да</label>
+            <input type="radio" value="0" id="quiz-10-0" name="quiz-10">
+            <label for="quiz-10-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-11">
+            <span>
+              Какие салонные процедуры Вы делали последние 6 месяцев<br class="from-sm">
+              (аппаратная косметология, инъекционная косметология,<br class="from-sm">
+              химические пилинги и пр.)?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-11" id="quiz-11" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-12">
+            <span>
+              Пользуетесь ли Вы декоративной косметикой?<br class="from-sm">
+              Если да, то какими именно средствами и как часто?<br class="from-sm">
+              Чем смываете?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-12" id="quiz-12" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Имеется ли у Вас склонность к высыпаниям?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-13-1" name="quiz-13">
+            <label for="quiz-13-1">Да</label>
+            <input type="radio" value="0" id="quiz-13-0" name="quiz-13">
+            <label for="quiz-13-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-14">
+            <span>
+              Какой характер носят высыпания? (Опишите своими словами - <br class="from-sm">
+              например, чёрные точки, белые прыщи, воспалённые <br class="from-sm">
+              высыпания без видимого гнойного содержимого и т.д.)
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-14" id="quiz-14" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-15">
+            <span>В каких зонах и как часто появляются высыпания?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-15" id="quiz-15" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Жирнится ли Ваша кожа?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-16-1" name="quiz-16" required>
+            <label for="quiz-16-1">Да</label>
+            <input type="radio" value="0" id="quiz-16-0" name="quiz-16">
+            <label for="quiz-16-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-17">
+            <span>
+              В какое время появляется жирный блеск – <br class="from-sm">
+              после пробуждения, в течение дня, к концу дня? В каких зонах?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-17" id="quiz-17" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Расширены ли у Вас поры?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-18-1" name="quiz-18" required>
+            <label for="quiz-18-1">Да</label>
+            <input type="radio" value="0" id="quiz-18-0" name="quiz-18">
+            <label for="quiz-18-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Есть ли у Вас следы постакне – красные пятна, рубцы, потемнения?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-19-1" name="quiz-19" required>
+            <label for="quiz-19-1">Да</label>
+            <input type="radio" value="0" id="quiz-19-0" name="quiz-19">
+            <label for="quiz-19-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-20" required>
+            <span>
+              Имеются ли у Вас пигментные пятна? Если да, то<br class="from-sm">
+              укажите локализацию и степень выраженности. <br class="from-sm">
+              После чего возникли (к примеру, после пребывания на<br class="from-sm">
+              солнце, с возрастом, на фоне гормонального сбоя и т.д.)?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-20" id="quiz-20" required>
+        </li>
+        <li>
+          <p class="quiz__label">
+            <span>Появляется ли у Вас ощущение стянутости кожи после умывания?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </p>
+          <div class="quiz__radio">
+            <input type="radio" value="1" id="quiz-21-1" name="quiz-21" required>
+            <label for="quiz-21-1">Да</label>
+            <input type="radio" value="0" id="quiz-21-0" name="quiz-21" required>
+            <label for="quiz-21-0">Нет</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-22">
+            <span>
+              Чувствительна ли у Вас кожа? <br class="from-sm">
+              Если да, то опишите как именно это проявляется.
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-22" id="quiz-22" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-23">
+            <span>
+              Есть ли у Вас купероз? Сосудистые звёздочки? <br class="from-sm">
+              Если да, то в какой области?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-23" id="quiz-23" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-24">
+            <span>
+              Опишите состояние Вашей кожи в области вокруг глаз. <br class="from-sm">
+              Есть ли ощущение сухости? <br class="from-sm">
+              Бывают ли отёки, мешки, тёмные круги?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-24" id="quiz-24" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-25">
+            <span>
+              Отметьте подходящие пункты:
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <div class="quiz__checkbox question">
+            <input type="checkbox" value="1" id="quiz-39-1" name="quiz-39" required>
+            <label for="quiz-39-1">Замечаю морщины при мимике</label>
+            <input type="checkbox" value="0" id="quiz-39-2" name="quiz-39" required>
+            <label for="quiz-39-2">Замечаю морщины в состоянии покоя</label>
+            <input type="checkbox" value="0" id="quiz-39-3" name="quiz-39" required>
+            <label for="quiz-39-3">Появилась отёчность лица</label>
+            <input type="checkbox" value="0" id="quiz-39-4" name="quiz-39" required>
+            <label for="quiz-39-4">Появились «брыли»</label>
+            <input type="checkbox" value="0" id="quiz-39-5" name="quiz-39" required>
+            <label for="quiz-39-5">Появился второй подбородок</label>
+            <input type="checkbox" value="0" id="quiz-39-6" name="quiz-39" required>
+            <label for="quiz-39-6">Появились носогубные складки</label>
+            <input type="checkbox" value="0" id="quiz-39-7" name="quiz-39" required>
+            <label for="quiz-39-7">Выражение лица стало грустным/уставшим</label>
+            <input type="checkbox" value="0" id="quiz-39-8" name="quiz-39" required>
+            <label for="quiz-39-8">Овал лица чёткий</label>
+            <input type="checkbox" value="0" id="quiz-39-9" name="quiz-39" required>
+            <label for="quiz-39-9">Нет подходящего пункта</label>
+          </div>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-25">
+            <span>
+              Опишите последовательность <br class="from-sm">
+              Вашего утреннего и вечернего домашнего ухода?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-25" id="quiz-25" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-26">
+            <span>
+              Есть ли в Вашем домашнем уходе ретинол и/или кислоты? <br class="from-sm">
+              Если да, то как часто применяете?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-26" id="quiz-26" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-27">
+            <span>
+              Какие проблемы хотите решить <br class="from-sm">
+              с помощью домашнего ухода?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-27" id="quiz-27" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-28">
+            <span>
+              Как давно Вас беспокоят текущие проблемы?
+              <span class="mandatorystart"><b>*</b></span>
+            </span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-28" id="quiz-28" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-29">
+            <span>
+              Какие средства Вы используете <br class="from-sm">
+              в домашнем уходе на данный момент?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-29" id="quiz-29" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-30">
+            <span>Что Вас не устраивает в Вашем домашнем уходе?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-30" id="quiz-30" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-31">
+            <span>
+              Проявлялись ли ранее аллергические реакции <br class="from-sm">
+              на косметические средства или процедуры? <br class="from-sm">
+              Если да, опишите какие именно.
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-31" id="quiz-31" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-32">
+            <span>
+              Какие климатические и погодные особенности <br cla>
+              в регионе Вашего проживания?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-32" id="quiz-32" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-33">
+            <span>
+              Не планируете ли Вы смену климата <br class="from-sm">
+              (поездка в регион с резко отличающимся климатом – <br class="from-sm">
+              солнце, море, горы и пр.)? Если да, то в какие сроки?
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-33" id="quiz-33" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-34">
+            <span>Сколько времени Вы проводите на улице?</span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-34" id="quiz-34" required>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-35">
+            <span>
+              Укажите особенности условий Вашей работы <br class="from-sm">
+              (работа на открытом воздухе, на производстве, в офисе и пр.)
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-35" id="quiz-35" required>
+        </li>
+        <li class="quiz__photo">
+          <p class="quiz__label">
+            <span>
+              Добавьте фотографии лица – общий план, фрагментарно по проблемам, область вокруг глаз.
+              Для Вашего комфорта Вы можете заретушировать/закрыть глаза. Главное, чтобы были отчётливо видны все нюансы состояния кожи.
+            </span>
+            <span class="mandatorystart">не менее 2&nbsp;фото<b>*</b></span>
+          </p>
+          <p class="quiz__photo-note">до 10 шт.</p>
+          <ul class="quiz__photo-list">
+            <li>
+              <input type="file" name="quiz-36-file-1" id="quiz-36-file-1">
+              <label for="quiz-36-file-1">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <input type="file" name="quiz-36-file-2" id="quiz-36-file-2">
+              <label for="quiz-36-file-2">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <input type="file" name="quiz-36-file-3" id="quiz-36-file-3">
+              <label for="quiz-36-file-3">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <button type="button" class="quiz__more-photo js_more_photo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 20H39.5" stroke="currentColor" />
+                  <path d="M20 0V39.5" stroke="currentColor" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li class="quiz__photo">
+          <p class="quiz__label">
+            По желанию для анализа совместимости компонентов, добавьте фото косметических средств Вашего домашнего ухода в случае, если он будет дополняться новыми средствами ухода, а не полностью замещаться.
+          </p>
+          <p class="quiz__photo-note">до 10 шт.</p>
+          <ul class="quiz__photo-list" data-max="10">
+            <li>
+              <input type="file" name="quiz-37-file-1" id="quiz-37-file-1">
+              <label for="quiz-37-file-1">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <input type="file" name="quiz-37-file-2" id="quiz-37-file-2">
+              <label for="quiz-37-file-2">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <input type="file" name="quiz-37-file-3" id="quiz-37-file-3">
+              <label for="quiz-37-file-3">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Добавить фото</span>
+              </label>
+            </li>
+            <li>
+              <button type="button" class="quiz__more-photo js_more_photo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 20H39.5" stroke="currentColor" />
+                  <path d="M20 0V39.5" stroke="currentColor" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <label class="quiz__label" for="quiz-38">
+            <span>
+              Укажите Вашу электронную почту и/или номер телефона <br class="from-sm">
+              для отправки результатов диагностики.
+            </span>
+            <span class="mandatorystart"><b>*</b></span>
+          </label>
+          <input class="quiz__text" type="text" name="quiz-38" id="quiz-38" required>
+        </li>
+      </ol>
+
+      <p class="quiz__note">
+        Фото, предоставленные для визуального осмотра, являются строго конфиденциальной информацией, нигде не публикуются, не передаются третьим лицам и необходимы для корректного и точного определения состояния кожи и локальных проблем.
+      </p>
+
+      <div class="quiz__checkbox">
+        <input type="checkbox" name="personal-data" id="personal-data">
+        <label for="personal-data">
+          <span>Согласие на обработку персональных данных</span>
+        </label>
+      </div>
+      <div class="quiz__checkbox">
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement">
+          <span>Специалист-косметолог подбирает косметику для улучшения внешнего вида и состояния кожи, а лечение дерматологических заболеваний (акне тяжёлой степени, розацеа, дерматиты, герпес, грибок, псориаз и др.) – это компетенция врача-дерматолога. <br>
+            При наличии дерматологических, аллергических или системных заболеваний требуется обязательная консультация профильного врача. <br>
+            Специалист не несёт ответственности за последствия применения косметики без учёта диагноза, поставленного врачом.</span>
+        </label>
+      </div>
+
+      <button type="submit" class="btn">
+        <span>Оплатить и отправить</span>
+        <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+          <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+        </svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<template class="js_add_photo_template">
+  <li>
+    <input type="file" name="quiz-37-file-3" id="quiz-37-file-3">
+    <label for="quiz-37-file-3">
+      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M33.5423 27.7083C33.5423 28.4819 33.235 29.2237 32.688 29.7707C32.1411 30.3177 31.3992 30.625 30.6256 30.625H4.37565C3.6021 30.625 2.86024 30.3177 2.31326 29.7707C1.76628 29.2237 1.45898 28.4819 1.45898 27.7083V11.6667C1.45898 10.8931 1.76628 10.1513 2.31326 9.60427C2.86024 9.05729 3.6021 8.75 4.37565 8.75H10.209L13.1256 4.375H21.8756L24.7923 8.75H30.6256C31.3992 8.75 32.1411 9.05729 32.688 9.60427C33.235 10.1513 33.5423 10.8931 33.5423 11.6667V27.7083Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M17.5007 24.7917C20.7223 24.7917 23.334 22.18 23.334 18.9583C23.334 15.7367 20.7223 13.125 17.5007 13.125C14.279 13.125 11.6673 15.7367 11.6673 18.9583C11.6673 22.18 14.279 24.7917 17.5007 24.7917Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Добавить фото</span>
+    </label>
+  </li>
+</template>
+
+@@include('./_footer.html')

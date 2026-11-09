@@ -1,0 +1,164 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+
+  &__dialog {
+    position: relative;
+    margin: auto;
+    max-width: min(1392px, 90vw);
+    height: max-content;
+    position: fixed;
+    inset: 0;
+  }
+
+  &__content {
+    height: max-content;
+    max-height: 95vh;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: clip auto;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close {
+    width: 46px;
+    height: 46px;
+    margin-left: auto;
+    border: 1px solid transparent;
+    border-radius: 100vw;
+    display: grid;
+    place-content: center;
+    transition: border-color 0.25s ease;
+
+    &:hover {
+      border-color: var(--color-black);
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.cb-modal {
+  .modal__dialog {
+    max-width: 500px;
+  }
+
+  .modal__body {
+    gap: 24px;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-black);
+    width: 100%;
+    border: 1px solid var(--color-black);
+    border-radius: 32px;
+    padding: 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background-color: var(--color-black);
+    }
+  }
+}
+
+.cf-modal {
+  .modal__dialog {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: $sm) {
+  .modal {
+    &__dialog {
+      max-width: 90vw !important;
+    }
+
+    &__content {
+      padding: 24px;
+    }
+
+    &__close {
+      width: 32px;
+      height: 32px;
+      top: 12px;
+      right: 12px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .cb-modal {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__socials {
+      gap: 24px;
+    }
+
+    &__link {
+      padding: 4px;
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.top-section {
+  padding-block: 14px 70px;
+
+  &--product {
+    .top-section__image {
+      width: auto;
+      max-width: 411px;
+      aspect-ratio: 411 / 400;
+      background-color: var(--color-white);
+      border: 1px solid var(--color-black);
+      border-radius: 32px;
+      overflow: hidden;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__container {
+    min-height: 400px;
+    height: auto;
+    border-radius: 32px;
+    background-color: var(--color-substrate);
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    flex-grow: 1;
+  }
+
+  &__image {
+    width: 50%;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to left, transparent 0%, var(--color-substrate) 100%);
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    grid-template-areas: 'title title price' 'desc link link';
+    align-items: center;
+    gap: 32px;
+
+    .h1 {
+      font-size: 48px;
+      grid-area: title;
+    }
+  }
+
+  &__price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    white-space: nowrap;
+    align-self: end;
+    grid-area: price;
+  }
+
+  &__short-desc {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(1 1 1 / 0.8);
+    grid-area: desc;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* максимум 2 строки */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__add2cart {
+    width: 300px;
+    grid-area: link;
+  }
+}
+
+.breadcrumbs {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-black);
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  a {
+    color: rgb(1 1 1 / 0.8);
+
+    &:hover,
+    &:focus {
+      color: var(--color-black);
+    }
+
+    &::after {
+      content: '/';
+      margin-inline: 4px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .top-section {
+    &__info {
+      grid-template-columns: 1fr max-content;
+      grid-template-areas: 'title title ' 'desc desc' 'price link';
+      gap: 24px;
+
+      .h1 {
+        font-size: 40px;
+      }
+    }
+
+    &__price {
+      font-size: 36px;
+    }
+
+    &__short-desc {
+      font-size: 18px;
+      -webkit-line-clamp: 3; /* максимум 3 строки */
+    }
+
+    &__add2cart {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .top-section {
+    &--product {
+      .top-section__container {
+        min-height: 0;
+        height: max-content;
+        border-radius: 24px;
+        flex-direction: column;
+      }
+
+      .top-section__image {
+        width: 100%;
+        max-width: none;
+        height: 300px;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+    }
+
+    &__price {
+      align-self: revert;
+    }
+
+    &__short-desc {
+      text-align: center;
+    }
+
+    &__add2cart {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .top-section {
+    padding-block: 15px 50px;
+
+    &--product {
+      .top-section__content {
+        height: auto;
+      }
+
+      .top-section__image {
+        height: 166px;
+      }
+    }
+
+    &__container {
+      min-height: 0;
+      height: max-content;
+      border-radius: 24px;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+      min-height: 157px;
+      padding: 32px 24px;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 166px;
+
+      &::after {
+        background: linear-gradient(to top, transparent 0%, var(--color-substrate) 100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.idx-contacts {
+  padding-block: 70px 80px;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 48.8%;
+    grid-template-rows: 1fr min-content;
+    gap: 32px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-contacts {
+    padding-block: 30px 100px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}

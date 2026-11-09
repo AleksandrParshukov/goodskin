@@ -1,0 +1,129 @@
+.footer {
+  padding-block: 60px;
+  background-color: var(--color-black);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .slogan {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--color-white);
+    }
+  }
+
+  &__menu {
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-white);
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__social {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    rect,
+    path {
+      transition: all 0.25s ease;
+    }
+
+    &:hover,
+    &:focus {
+      rect {
+        fill: var(--color-white);
+      }
+
+      path {
+        fill: var(--color-black);
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 60px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(247, 247, 247, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      color: rgb(255 255 255 / 0.8);
+
+      &:hover,
+      &:focus {
+        color: var(--color-white);
+      }
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .footer {
+    padding-block: 80px;
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__logo {
+      align-items: center;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+
+    &__socials {
+      justify-content: center;
+    }
+
+    &__social {
+      font-size: 15px;
+    }
+
+    &__bottom {
+      padding-top: 40px;
+      margin-top: 40px;
+      flex-direction: column;
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

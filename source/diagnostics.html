@@ -1,0 +1,88 @@
+@@include('./_header.html')
+
+<section class="top-section top-section--product">
+  <div class="wrapper">
+    <div class="top-section__container">
+      <div class="top-section__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Диагностика</p>
+          </li>
+        </ol>
+        <div class="top-section__info">
+          <h1 class="h1">Диагностика</h1>
+          <p class="top-section__price">3 244 ₽</p>
+          @@include('./_btn.html', {text: "В корзину", link: "#", class: "top-section__add2cart btn"})
+        </div>
+      </div>
+      <picture class="top-section__image">
+        <source media="(min-width: 992px)" srcset="./img/diagnostics.webp">
+        <img src="./img/diagnostics-sm.webp" width="411" height="400" alt="">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="diagnostics__compound">
+  <div class="wrapper">
+    <h2 class="h1">Онлайн-диагностика включает в себя</h2>
+    <ul class="diagnostics__compound-list">
+      <li>Определение типа кожи</li>
+      <li>Определение состояния кожи</li>
+      <li>Определение морфотипа старения</li>
+      <li>Список основных рекомендуемых косметических компонентов и&nbsp;их&nbsp;сочетаемость</li>
+      <li>Список основных запрещённых косметических компонентов, учитывая индивидуальные особенности</li>
+      <li>Подбор полного набора конкретных необходимых косметических средств марок профессиональной уходовой косметики по дружественным ценам</li>
+      <li>
+        Выстраивание подробной системы коррекции текущих проблем с&nbsp;поэтапным
+        и&nbsp;пошаговым алгоритмом использования косметических средств<br class="from-sm">
+        (утренний уход, вечерний уход, дополнительный уход,<br class="from-sm">
+        этапы применения косметических средств)<br class="from-sm">
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="diagnostics__algorithm">
+  <div class="wrapper">
+    <h2 class="h1">Алгоритм покупки</h2>
+    @@include('./_btn.html', {text: "Заполнить анкету", link: "#", class: "btn"})
+
+    <ol class="diagnostics__algorithm-list">
+      <li>
+        <p class="diagnostics__num">01</p>
+        <p>Заполняете диагностическую анкету и оплачиваете услугу.</p>
+      </li>
+      <li>
+        <p class="diagnostics__num">02</p>
+        <p>В срок до семи календарных дней мы отправляем Вам результаты диагностики на электронную почту или через мессенджер. Предпочтительный способ отправки Вы указываете при заполнении анкеты.</p>
+      </li>
+      <li>
+        <p class="diagnostics__num">03</p>
+        <p>Если Вы решаете выкупить подобранные для Вас косметические средства, то при покупке любых позиций на сумму от 7000 рублей, диагностика будет для Вас В ПОДАРОК!</p>
+        <p>Для этого напишите нам и мы рассчитаем стоимость Вашей покупки с учётом вычета стоимости диагностики.</p>
+      </li>
+      <li>
+        <p class="diagnostics__num">04</p>
+        <p>Если Вы выкупаете средства, подобранные в рамках диагностики, в полном объёме, то в подарок, плюс к бесплатной диагностике, мы предоставим Вам скидку в размере 10 % на Ваш заказ.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="diagnostics__delivery">
+  <div class="wrapper">
+    <h2 class="h1">Где забирать заказ?</h2>
+    
+    <div class="diagnostics__delivery-desc desc">
+      <p>Забрать заказ можно по предварительной договорённости лично в&nbsp;«Бизнес-центр Каменноостровский-40», по адресу Каменноостровский&nbsp;просп., д.&nbsp;40, 2&nbsp;этаж, кабинет&nbsp;202.</p>
+
+      <p>Или удобным для Вас способом доставки. Оплата доставки осуществляется за счёт покупателя.</p>
+    </div>
+
+    <img src="./img/diagnostics-delivery.png" width="696" height="290" alt="">
+  </div>
+</section>
+
+@@include('./_footer.html')

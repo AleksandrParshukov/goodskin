@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ПрофУход</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__menu">
+          <button type="button" class="header__toggle js_menu_open">
+            <span class="icon">
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.487305 0.4875H23.4873M0.487305 5.82083H23.4873M0.487305 11.4875H23.4873" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="from-sm">Меню</span>
+          </button>
+
+          <nav class="main-nav">
+            <div class="main-nav__content">
+              <div class="main-nav__header">
+                <a href="/" class="header__logo">
+                  <span>ПрофУход</span>
+                  <span class="slogan">Без лишних средств. До результата.</span>
+                </a>
+                <button class="main-nav__close js_menu_close">
+                  <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="main-nav__list">
+                <li><a href="diagnostics.html" class="main-nav__link">О диагностике</a></li>
+                <li><a href="catalog.html" class="main-nav__link">Каталог</a></li>
+                <li><a href="information.html" class="main-nav__link">Информация</a></li>
+                <li><a href="blog.html" class="main-nav__link">Блог</a></li>
+                <li><a href="tests.html" class="main-nav__link">Мини-тесты</a></li>
+                <li><a href="contacts.html" class="main-nav__link">Контакты</a></li>
+              </ul>
+              <div class="main-nav__footer">
+                <a href="#callbackModal" class="btn"  data-toggle='modal' data-target='#callbackModal'  >
+  <span>Связаться с нами</span>
+  <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+    <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+  </svg>
+</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <a href="/" class="header__logo">
+          <span>ПрофУход</span>
+          <span class="slogan">Без лишних средств. До результата.</span>
+        </a>
+
+        <a href="viewcart.html" class="header__cart">
+          <span class="icon">
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.529785 0.53H3.43888L5.38797 10.0943C5.45447 10.4231 5.63663 10.7185 5.90255 10.9288C6.16846 11.139 6.5012 11.2507 6.84251 11.2443H13.9116C14.2529 11.2507 14.5857 11.139 14.8516 10.9288C15.1175 10.7185 15.2996 10.4231 15.3661 10.0943L16.5298 4.10143H4.16615M7.07524 14.8157C7.07524 15.2102 6.74963 15.53 6.34797 15.53C5.94631 15.53 5.62069 15.2102 5.62069 14.8157C5.62069 14.4212 5.94631 14.1014 6.34797 14.1014C6.74963 14.1014 7.07524 14.4212 7.07524 14.8157ZM15.0752 14.8157C15.0752 15.2102 14.7496 15.53 14.348 15.53C13.9463 15.53 13.6207 15.2102 13.6207 14.8157C13.6207 14.4212 13.9463 14.1014 14.348 14.1014C14.7496 14.1014 15.0752 14.4212 15.0752 14.8157Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="from-sm">Корзина</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+
+<section class="top-section">
+  <div class="wrapper">
+    <div class="top-section__container">
+      <div class="top-section__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Блог</p>
+          </li>
+        </ol>
+        <h1 class="h1">Блог</h1>
+      </div>
+      <picture class="top-section__image">
+        <source media="(min-width: 768px)" srcset="./img/blog-top.webp">
+        <img src="./img/blog-top-sm.webp" alt="">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="blog section">
+  <div class="wrapper">
+    <ul class="blog__list">
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="blog_zoom.html" class="blog__item">
+          <div class="blog__author">
+            <img src="./img/blog-author.png" width="60" height="60" alt="">
+            <p class="blog__author-name">Людмила Маклакова</p>
+            <p class="blog__author-position">Косметолог-эстетист</p>
+          </div>
+          <p class="blog__date">07.04.2026</p>
+          <p class="blog__caption">Типы кожи</p>
+          <p class="blog__desc desc">
+            Наш тип кожи определяется наследственностью. 
+            Активность и количество сальных желез, размер пор, толщина эпидермиса, особенности синтеза естественных увлажнителей и пигментации – всё это закладывается генетически.
+            В течение жизни тип кожи НЕ МЕНЯЕТСЯ.
+            Меняется состояние кожи. На это влияет фактор старения организма, изменения гормонального фона, стрессы, питание, режим сна, сезонность, домашний уход.
+          </p>
+
+          <svg class="blog__chevron" width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="22" fill="var(--icon-bg)" />
+            <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="blog__more btn btn-outline"  >
+  <span>Показать еще</span>
+  <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+    <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+  </svg>
+</a>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="wrapper">
+    <div class="callback__content">
+      <h2 class="callback__title">Остались вопросы?</h2>
+      <p class="callback__text">Ответим на&nbsp;них и&nbsp;поможем подобрать подходящую систему ухода за&nbsp;кожей</p>
+    </div>
+    <div class="callback__control">
+      <a href="#" class="btn"  data-toggle='modal' data-target='#contactFormModal'  >
+  <span>Связаться с нами</span>
+  <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+    <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+  </svg>
+</a>
+      <a href="#" class="btn btn-outline"  >
+  <span>Заполнить анкету</span>
+  <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+    <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+  </svg>
+</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <a href="/" class="footer__logo">
+        <span>ПрофУход</span>
+        <span class="slogan">Без лишних средств. До результата.</span>
+      </a>
+
+      <ul class="footer__menu">
+        <li><a href="diagnostics.html" class="footer__link">О диагностике</a></li>
+        <li><a href="catalog.html" class="footer__link">Каталог</a></li>
+        <li><a href="information.html" class="footer__link">Информация</a></li>
+        <li><a href="blog.html" class="footer__link">Блог</a></li>
+        <li><a href="tests.html" class="footer__link">Мини-тесты</a></li>
+        <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="" class="footer__social">
+          <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" stroke="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2712 34.3712C19.7937 34.3712 18.6424 34.008 16.6411 32.555C15.3752 34.1896 11.3667 35.4671 11.1918 33.2815C11.1918 31.6409 10.8302 30.2545 10.4203 28.7409C9.93202 26.8762 9.37744 24.7997 9.37744 21.7908C9.37744 14.6046 15.2487 9.19824 22.2049 9.19824C29.1671 9.19824 34.6224 14.8709 34.6224 21.8574C34.6458 28.7358 29.1198 34.3345 22.2712 34.3712ZM22.3737 15.4098C18.986 15.2342 16.3457 17.5892 15.761 21.2823C15.2788 24.3396 16.1348 28.0629 16.8641 28.2566C17.2137 28.3413 18.0938 27.627 18.6424 27.076C19.5494 27.7054 20.6057 28.0833 21.7046 28.1718C25.2148 28.3414 28.2141 25.6575 28.4498 22.1359C28.587 18.6068 25.8843 15.6178 22.3737 15.4158V15.4098Z" fill="currentColor" />
+          </svg>
+          <span>MAX</span>
+        </a>
+        <a href="" class="footer__social">
+          <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" stroke="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1981 21.7679C16.6918 18.9737 21.0218 17.1315 23.1884 16.2415C29.3744 13.7003 30.6598 13.2589 31.4976 13.2443C31.6819 13.2411 32.0939 13.2862 32.3608 13.5001C32.5861 13.6807 32.6481 13.9246 32.6778 14.0959C32.7075 14.2671 32.7444 14.6571 32.7151 14.9619C32.3798 18.4407 30.9293 26.8826 30.1914 30.7788C29.8792 32.4275 29.2643 32.9802 28.6691 33.0343C27.3756 33.1519 26.3933 32.19 25.1404 31.3789C23.1799 30.1096 22.0724 29.3195 20.1694 28.0809C17.9702 26.6496 19.3958 25.8629 20.6492 24.5772C20.9772 24.2407 26.6766 19.1206 26.7869 18.6562C26.8007 18.5981 26.8135 18.3815 26.6833 18.2672C26.553 18.1529 26.3608 18.192 26.2221 18.2231C26.0254 18.2671 22.8935 20.3117 16.8263 24.3566C15.9374 24.9595 15.1321 25.2533 14.4107 25.2379C13.6154 25.2209 12.0855 24.7937 10.9481 24.4286C9.55317 23.9808 8.44447 23.744 8.54102 22.9834C8.5913 22.5872 9.14368 22.1821 10.1981 21.7679Z" fill="currentColor" />
+          </svg>
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <a href="#">Публичная оферта</a>
+      <a href="#">Согласие на обработку...</a>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie js_cookie">
+  <div class="wrapper">
+    <p>
+      Мы используем куки для наилучшего представления нашего сайта. <br>
+      Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает.
+    </p>
+    <button type="button" class="cookie__btn js_apply_cookie">Хорошо</button>
+    <button type="button" class="cookie__btn" data-toggle="modal" data-target="#policyModal">Политика конфиденциальности</button>
+  </div>
+</div>
+
+<div id="callbackModal" class="modal cb-modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <button type="button" class="modal__close" data-dismiss="modal">
+          <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <p class="cb-modal__title">Выберите удобный для Вас способ связи</p>
+        <div class="cb-modal__socials">
+          <a href="#" class="cb-modal__link">
+            <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2712 34.3712C19.7937 34.3712 18.6424 34.008 16.6411 32.555C15.3752 34.1896 11.3667 35.4671 11.1918 33.2815C11.1918 31.6409 10.8302 30.2545 10.4203 28.7409C9.93202 26.8762 9.37744 24.7997 9.37744 21.7908C9.37744 14.6046 15.2487 9.19824 22.2049 9.19824C29.1671 9.19824 34.6224 14.8709 34.6224 21.8574C34.6458 28.7358 29.1198 34.3345 22.2712 34.3712ZM22.3737 15.4098C18.986 15.2342 16.3457 17.5892 15.761 21.2823C15.2788 24.3396 16.1348 28.0629 16.8641 28.2566C17.2137 28.3413 18.0938 27.627 18.6424 27.076C19.5494 27.7054 20.6057 28.0833 21.7046 28.1718C25.2148 28.3414 28.2141 25.6575 28.4498 22.1359C28.587 18.6068 25.8843 15.6178 22.3737 15.4158V15.4098Z" fill="currentColor" />
+            </svg>
+            <span>MAX</span>
+          </a>
+          <a href="#" class="cb-modal__link">
+            <svg width="44" height="44" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1981 21.7679C16.6918 18.9737 21.0218 17.1315 23.1884 16.2415C29.3744 13.7003 30.6598 13.2589 31.4976 13.2443C31.6819 13.2411 32.0939 13.2862 32.3608 13.5001C32.5861 13.6807 32.6481 13.9246 32.6778 14.0959C32.7075 14.2671 32.7444 14.6571 32.7151 14.9619C32.3798 18.4407 30.9293 26.8826 30.1914 30.7788C29.8792 32.4275 29.2643 32.9802 28.6691 33.0343C27.3756 33.1519 26.3933 32.19 25.1404 31.3789C23.1799 30.1096 22.0724 29.3195 20.1694 28.0809C17.9702 26.6496 19.3958 25.8629 20.6492 24.5772C20.9772 24.2407 26.6766 19.1206 26.7869 18.6562C26.8007 18.5981 26.8135 18.3815 26.6833 18.2672C26.553 18.1529 26.3608 18.192 26.2221 18.2231C26.0254 18.2671 22.8935 20.3117 16.8263 24.3566C15.9374 24.9595 15.1321 25.2533 14.4107 25.2379C13.6154 25.2209 12.0855 24.7937 10.9481 24.4286C9.55317 23.9808 8.44447 23.744 8.54102 22.9834C8.5913 22.5872 9.14368 22.1821 10.1981 21.7679Z" fill="currentColor" />
+            </svg>
+            <span>Telegram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="policyModal" class="modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <p class="modal__title">Политика конфиденциальности</p>
+
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__text desc">
+          <p>«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202</p>
+
+          <p>«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202м«Бизнес-центр Каменноостровский-40», Каменноостровский просп., д. 40, 2 этаж, кабинет 202</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contactFormModal" class="modal cf-modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <p class="modal__title">Форма обратной связи</p>
+
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="contact-form__label" for="name">ФИО *</label>
+            <input class="contact-form__input" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="phone">Телефон *</label>
+            <input class="contact-form__input js_phone_input" type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="email">Email *</label>
+            <input class="contact-form__input" type="email" name="email" id="email" placeholder="example@mail.com">
+          </div>
+          <div class="form-group">
+            <label class="contact-form__label" for="comment">Комментарий</label>
+            <textarea class="contact-form__input" name="comment" id="comment" rows="4"></textarea>
+          </div>
+          <div class="contact-form__checkbox">
+            <input type="checkbox" name="personal-data" id="personal-data">
+            <label for="personal-data">
+              <span>Согласие на обработку персональных данных</span>
+            </label>
+          </div>
+
+          <button type="submit" class="contact-form__submit btn">
+            <span>Отправить</span>
+            <svg width="45" height="45" viewBox="-1 -1 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="44" height="44" rx="22" fill="var(--icon-bg)" stroke="var(--icon-stroke)" />
+              <path d="M17.5312 13.0625L26.4688 22L17.5312 30.9375" stroke="var(--icon-chevron)" stroke-width="2.0625" stroke-linecap="round" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

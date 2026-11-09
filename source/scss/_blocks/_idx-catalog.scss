@@ -1,0 +1,40 @@
+.idx-catalog {
+  padding-block: 74px 70px;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 239, 239, 0) 40.51%,
+    rgba(239, 239, 239, 0.9) 41.44%,
+    rgba(239, 239, 239, 0) 100%
+  );
+
+  &__title {
+    margin-block: 160px 80px;
+  }
+}
+
+@media (max-width: $md) {
+  .idx-catalog {
+    background: linear-gradient(
+      180deg,
+      rgba(239, 239, 239, 0) 37.51%,
+      rgba(239, 239, 239, 0.9) 38.44%,
+      rgba(239, 239, 239, 0) 100%
+    );
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-catalog {
+    background: transparent;
+  }
+}
+
+@media (max-width: $sm) {
+  .idx-catalog {
+    padding-block: 120px 70px;
+
+    &__title {
+      margin-block: 100px 40px;
+    }
+  }
+}
